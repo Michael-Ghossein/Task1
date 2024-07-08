@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.7.0.min.js"></script>
+</head>
+<body class="home">
+    <header>
+        <div class="logo"><img src="webpage.jpeg" alt="Logo"></div>
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="introduction">
+        <h1>Welcome to Our Website</h1>
+        <p>Explore our services and discover how we can help you achieve your goals. We are dedicated to delivering high-quality solutions tailored to meet your needs. Join us on our journey to success!</p>
+    </section>
+    <section class="container">
+        <main class="main-content">
+            <h2 class="toggle-title">Main Content</h2>
+            <div class="Text1" style="display: none;">
+                <p>Welcome to Our Company, where we specialize in delivering high-quality products and services tailored to meet your needs. Our commitment to excellence drives everything we do, ensuring your satisfaction and success.</p>
+                <p>Whether you're looking for innovative solutions, reliable support, or expert advice, we're here to help you achieve your goals. Explore our website to learn more about our offerings and how we can assist you on your journey.</p>
+            </div>
+        </main>
+        <aside class="sidebar">
+            <h2 class="toggle-title">About Us</h2>
+            <div class="Text2" style="display: none;">
+                <p>At Our Company, we pride ourselves on our dedication to customer satisfaction and superior service delivery. With years of industry experience, we have built a reputation for reliability and trustworthiness.</p>
+                <p>Join thousands of satisfied customers who have chosen us as their preferred partner. Contact us today to see how we can support your business growth and success.</p>
+            </div>
+        </aside>
+    </section>
+    <script>
+        $(document).ready(function () {
+            $('.toggle-title').click(function () {
+                $(this).next('div').slideToggle('slow');
+            });
+        });
+    </script>
+</body>
+</html>

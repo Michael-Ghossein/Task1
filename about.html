@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.7.0.min.js"></script>
+</head>
+<body class="about">
+    <header>
+        <div class="logo"><img src="webpage.jpeg" alt="Logo"></div>
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="introduction">
+        <h1>About Us</h1>
+        <p>Welcome to our company! We are dedicated to providing the best services in the industry. Our team of professionals is committed to excellence and customer satisfaction. With years of experience, we strive to exceed your expectations and deliver top-notch results. Thank you for choosing us as your trusted partner.</p>
+    </section>
+    <section class="container">
+        <main class="main-content">
+            <h2 class="toggle-title">Our History</h2>
+            <div class="content" style="display: none;">
+                <p>Founded in 2005, Our Company has grown from a small startup to a leading provider in web development. Our journey is marked by innovation, dedication, and a commitment to exceeding customer expectations.</p>
+                <p>Over the years, we have expanded our services and capabilities to better serve our clients. Today, we continue to uphold our values of integrity, professionalism, and customer-centricity.</p>
+            </div>
+        </main>
+        <aside class="sidebar">
+            <h2 class="toggle-title">Company Values</h2>
+            <div class="content" style="display: none;">
+                <p>At Our Company, our core values guide everything we do:</p>
+                <ul>
+                    <li>Customer Satisfaction</li>
+                    <li>Integrity and Transparency</li>
+                    <li>Innovation and Continuous Improvement</li>
+                    <li>Teamwork and Collaboration</li>
+                </ul>
+            </div>
+        </aside>
+    </section>
+    <script>
+        $(document).ready(function () {
+            $('.toggle-title').click(function () {
+                $(this).next('.content').slideToggle('slow');
+            });
+        });
+    </script>
+</body>
+</html>

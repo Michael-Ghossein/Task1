@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.7.0.min.js"></script>
+</head>
+<body class="services">
+    <header>
+        <div class="logo"><img src="webpage.jpeg" alt="Logo"></div>
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="introduction">
+        <h1>Our Services</h1>
+        <p>Explore the wide range of services we offer to our clients.</p>
+    </section>
+    <section class="container">
+        <main class="main-content">
+            <h2 class="toggle-title">Our Services</h2>
+            <div class="content" style="display: none;">
+                <p>At Our Company, we offer a comprehensive range of services designed to meet the diverse needs of our clients. Whether you're looking for IT, software, web, or mobile developers, we have the expertise to deliver customer needs.</p>
+                <p>Our team of professionals is dedicated to providing customized solutions that drive your business forward. From mobile to web development, we're committed to excellence in every aspect of our work.</p>
+            </div>
+        </main>
+        <aside class="sidebar">
+            <h2 class="toggle-title">Why Choose Us?</h2>
+            <div class="content" style="display: none;">
+                <p>Choosing Our Company means partnering with a trusted industry leader known for:</p>
+                <ul>
+                    <li>Reliability and Trustworthiness</li>
+                    <li>Expertise and Experience</li>
+                    <li>Customer-Centric Approach</li>
+                    <li>Innovative Solutions</li>
+                </ul>
+            </div>
+        </aside>
+    </section>
+    <script>
+        $(document).ready(function () {
+            $('.toggle-title').click(function () {
+                $(this).next('.content').slideToggle('slow');
+            });
+        });
+    </script>
+</body>
+</html>

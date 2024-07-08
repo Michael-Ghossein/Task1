@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.toggle-title').click(function () {
+                $(this).next('.content').slideToggle('slow');
+            });
+        });
+    </script>
+</head>
+<body class="contact">
+    <header>
+        <div class="logo"><img src="webpage.jpeg" alt="Logo"></div>
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="introduction">
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for any inquiries or support.</p>
+    </section>
+    <div class="container">
+        <main class="main-content">
+            <h2 id="contact-info-title" class="toggle-title">Contact Information</h2>
+            <div id="contact-info-content" class="content" style="display: none;">
+                <p>You can reach us via email, phone, or by visiting our office.</p>
+                <p>Email: michael-ghossain@hotmail.com</p>
+                <p>Phone number: +961 76921870</p>
+            </div>
+        </main>
+        <aside class="sidebar">
+            <h2 id="location-title" class="toggle-title">Location</h2>
+            <div id="location-content" class="content" style="display: none;">
+                <p>Our company is located in Zahle, Lebanon.</p>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
